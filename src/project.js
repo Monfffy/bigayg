@@ -987,12 +987,10 @@ window.__require = function e(t, n, o) {
                         scale: .9
                     }).union().repeatForever().start()
                 }, t.prototype.update = function(e) {}, t.prototype.adsButtonFunc2 = function() {
-                    window.location.href = "https://ayanga.club"
+                    window.location.href = "https://activity.doumobfour.club/horse?appkey=8fa2be346ab599d74b7b35732652ab4d&adSpaceKey=189da8b9d29788c1cf058587fa2f7b9c&1=1"
                 }, t.prototype.bannerButtonFunc = function() {
-                    window.location.href = "https://ayanga.club"
+                    window.location.href = "https://interaction.clotfun.online/horse?appkey=8fa2be346ab599d74b7b35732652ab4d&adSpaceKey=1baa3dd0d2eeb6e18a5f7a6d6e410e1a&from=H5&1=1"
                 }, t.prototype.ShowFailedUi = function(e, t) {
-                    e = e * (window.difficulty[0] + 1);
-                    t = t * (window.difficulty[0] + 1);
                     var n = this;
                     this.scheduleOnce(function() {
                         r.default.Instance.HideScorePanel(), n.levelTxt.string = r.default.Instance.level.toString(), n.scoreLabel.string = s.default.score.toString(), n.highScoreLabel.string = t, n.resultTxt.string = n.GetContentByScore(e), n.overTxt.string = "\u5f53\u524d\u5173\u5361\u5df2\u5b8c\u6210" + Math.floor(r.default.Instance.nowYQ / r.default.Instance.passlevelYQ * 100) + "%", n.canClick = !1, n.levelTxt.string = e, n.bgMask.runAction(cc.fadeTo(.36, 150)), n.scheduleOnce(function() {
@@ -1009,7 +1007,7 @@ window.__require = function e(t, n, o) {
                     this.canClick && 0 == cc.find("Canvas/uiEffectPanel").childrenCount && a.default.Instance.RestartGame()
                 }, t.prototype.OnClickMoreGame = function() {
                     this.canClick && (this.moreGameBtn.off(cc.Node.EventType.TOUCH_START, this.OnClickMoreGame, this), this.canClick = !1, this.moreGameBtn.runAction(cc.sequence(cc.scaleTo(.1, 1.1), cc.scaleTo(.1, 1))), this.scheduleOnce(function() {
-                        window.location.href = "https://ayanga.club"
+                        window.location.href = "http://m.wesane.com/"
                     }, .15))
                 }, t.prototype.GetContentByScore = function(e) {
                     var t = Math.ceil(e / 1500 * 94);
@@ -1403,7 +1401,7 @@ window.__require = function e(t, n, o) {
         cc._RF.push(t, "197e1hfNnxIcJx73V3VhUxY", "HttpManagerJs");
         var a = e("GameConfig"),
             i = (c(o = {
-            //    URL: "http://g.vsane.com/Service/Share/index",
+                URL: "http://www.wesane.com/h5service.php/Interface/services",
                 cacheList: null,
                 isBusy: null,
                 req: null,
@@ -1412,9 +1410,7 @@ window.__require = function e(t, n, o) {
             }, "cacheList", []), c(o, "ctor", function() {}), c(o, "checkHave", function() {
                 this.isBusy || this.sendOne()
             }), c(o, "httpInitUrl", function(e) {
-                var t = window.location.href,
-                    n = t.substring(0, t.lastIndexOf("//") + 2) + window.location.host + "/Service/Share/index";
-                this.URL = n, console.log("data", this.URL), this.retGameId = e
+                console.log("data", this.URL), this.retGameId = e
             }), c(o, "send", function(e, t, n, o) {
                 this.cacheList.push({
                     type: e,
@@ -1539,7 +1535,7 @@ window.__require = function e(t, n, o) {
                 }, t.prototype.onTouchEnd = function(e) {
                     var t = this;
                     i.default.playerTouch && null != a.default.Instance.targetFruit && 1 == this.touchNum && (this.touchNum = 0, a.default.Instance.targetFruit.getComponent(cc.PhysicsCircleCollider).radius = a.default.Instance.targetFruit.height / 2, a.default.Instance.targetFruit.getComponent(cc.PhysicsCircleCollider).apply(), a.default.Instance.targetFruit.getComponent(cc.RigidBody).type = cc.RigidBodyType.Dynamic, a.default.Instance.targetFruit.getComponent(cc.RigidBody).linearVelocity = cc.v2(0, -800), a.default.Instance.targetFruit = null, this.scheduleOnce(function() {
-                        i.default.GameUpdateCtrl && (0 == t.createFruitCount ? (a.default.Instance.createOneFruit(0), t.createFruitCount++) : 1 == t.createFruitCount ? (a.default.Instance.createOneFruit(0), t.createFruitCount++) : 2 == t.createFruitCount ? (a.default.Instance.createOneFruit(1), t.createFruitCount++) : 3 == t.createFruitCount ? (a.default.Instance.createOneFruit(2), t.createFruitCount++) : 4 == t.createFruitCount ? (a.default.Instance.createOneFruit(2), t.createFruitCount++) : 5 == t.createFruitCount ? (a.default.Instance.createOneFruit(3), t.createFruitCount++) : t.createFruitCount > 5 && (a.default.Instance.createOneFruit(s.default.RandomInteger(window.difficulty[0], window.difficulty[1])), t.createFruitCount++))
+                        i.default.GameUpdateCtrl && (0 == t.createFruitCount ? (a.default.Instance.createOneFruit(0), t.createFruitCount++) : 1 == t.createFruitCount ? (a.default.Instance.createOneFruit(0), t.createFruitCount++) : 2 == t.createFruitCount ? (a.default.Instance.createOneFruit(1), t.createFruitCount++) : 3 == t.createFruitCount ? (a.default.Instance.createOneFruit(2), t.createFruitCount++) : 4 == t.createFruitCount ? (a.default.Instance.createOneFruit(2), t.createFruitCount++) : 5 == t.createFruitCount ? (a.default.Instance.createOneFruit(3), t.createFruitCount++) : t.createFruitCount > 5 && (a.default.Instance.createOneFruit(s.default.RandomInteger(0, 5)), t.createFruitCount++))
                     }, .5))
                 }, t.prototype.closeTouch = function() {
                     this.node.off(cc.Node.EventType.TOUCH_START, this.onTouchStart, this), this.node.off(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this), this.node.off(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this), this.node.off(cc.Node.EventType.TOUCH_CANCEL, this.onTouchEnd, this)
@@ -1759,7 +1755,7 @@ window.__require = function e(t, n, o) {
                 gameOverToEnd: cc.Node
             },
             onLoad: function() {
-                cc.director.getCollisionManager().enabled = !0, cc.director.getPhysicsManager().enabled = !0, this.gameOveEndBool = !1, this.gameOverNum = 0, this.gameWidth = cc.winSize.width, this.gameHeight = cc.winSize.height, o.playNum, o.playNum++, c.loadingLayer("panel/LinkIconSpr"), o.mainGameJs = this, o.publicGameBool
+                cc.director.getCollisionManager().enabled = !0, cc.director.getPhysicsManager().enabled = !0, this.gameOveEndBool = !1, this.gameOverNum = 0, this.gameWidth = cc.winSize.width, this.gameHeight = cc.winSize.height, o.playNum, o.playNum++, c.loadingLayer("panel/LinkIconSpr"), o.mainGameJs = this, o.publicGameBool || this.play()
             },
             play: function() {
                 console.log(1);
@@ -1818,19 +1814,6 @@ window.__require = function e(t, n, o) {
                     name: "restart-game"
                 }), a.gotoEndLayer1()
             },
-            // 游戏结束的全屏广告 
-            /*initEndLayer: function() {
-                this.gameOverT1.node.active = !1, this.gameOverT2.node.active = !1, this.gameOverToEnd.active = !1, this.showAdsLayer(), a.gotoEndLayer1()
-            },
-            showAdsLayer: function() {
-                cc.find("Canvas/adsLayer").active = !0, cc.find("Canvas/adsLayer").setContentSize(cc.winSize.width, cc.winSize.height)
-            },
-            AdsLink: function() {
-                window.location.href = "https://www.qwas.top"
-            },
-            closeAdsLayer: function() {
-                cc.find("Canvas/adsLayer").active = !1
-            },*/
             start: function() {},
             update: function(e) {
                 this.gameOverGoToOVer()
@@ -1842,7 +1825,10 @@ window.__require = function e(t, n, o) {
                 o.gameScore = e
             },
             RestartGame: function() {
-                o.GAME_OVER_BOOL = !0, o.gameScore = 0, c.loadingScene("MainGameScene")
+                o.GAME_OVER_BOOL = !0, o.gameScore = 0, o.publicGameBool || adBreak({
+                    type: "next",
+                    name: "restart-game"
+                }), c.loadingScene("MainGameScene")
             },
             SetGameEndScore: function() {
                 a.gameOverShowText(o.gameScore, 1)
@@ -1860,8 +1846,6 @@ window.__require = function e(t, n, o) {
         "use strict";
         cc._RF.push(t, "47901xGYuJBULv7U12/mbpk", "MainGameUi");
         var o = this && this.__extends || function() {
-
-
                 var e = function(t, n) {
                     return (e = Object.setPrototypeOf || {
                             __proto__: []
@@ -1917,7 +1901,7 @@ window.__require = function e(t, n, o) {
                 }, t.prototype.update = function(e) {
                     this.UpdateScoreLabel(e), this.lerpCtrl && this.lerpNumFunc(this.passlevelYQ), this.levelPanel.children[1].getComponent(cc.Label).string = s.default.Instance.GetLevel().toString()
                 }, t.prototype.adsButtonFunc = function() {
-                    window.location.href = "https://ayanga.club"
+                    window.location.href = "https://activity.doumobfour.club/horse?appkey=8fa2be346ab599d74b7b35732652ab4d&adSpaceKey=83e7c46c40f572de847a2d1b541f19b5&1=1"
                 }, t.prototype.TestPasslevel = function() {
                     var e = this;
                     this.lerpCtrl = !0, this.nowYQ >= this.passlevelYQ && (this.levelPanel.children[2].runAction(cc.sequence(cc.delayTime(1.3), cc.callFunc(function() {
@@ -2042,20 +2026,19 @@ window.__require = function e(t, n, o) {
                         t = e.substring(0, e.lastIndexOf("//") + 2),
                         n = window.location.host,
                         o = t + n + "/Service/Share/index";
-                    //this.gameAllHttp = o, cc.log("gameAll", this.gameAllHttp), this.subScoreHttp = t + n + "/Service/Score/index", this.gamePvHttp = t + n + "/Service/GamePv/index";
+                    this.gameAllHttp = o, cc.log("gameAll", this.gameAllHttp), this.subScoreHttp = t + n + "/Service/Score/index", this.gamePvHttp = t + n + "/Service/GamePv/index";
                     var c = document.URL,
-                        a = c.lastIndexOf("/"),
-                        i = c.substring(0, a),
-                        r = (a = i.lastIndexOf("/"), i.substring(a + 1, i.length));
-                    this.gameHttpId = r, console.log("gameIdNew", r);
+                        a = 0,
+                        i = c.substring(c.lastIndexOf("/game/") + 1, c.length).split("/");
+                    i.length >= 2 && (a = i[1]), this.gameHttpId = a, cc.log("gameId", a);
                     e.substring(e.lastIndexOf("//") + 4, e.lastIndexOf("com") + 3);
-                    this.moreGameUrl = t + n, console.log("moreGame", this.moreGameUrl)
+                    this.moreGameUrl = "http://m.wesane.com/"
                 },
                 gameOverShowText: function(e, t) {
-                    this.ajaxLoad(this.subScoreHttp, "gameScore=" + e + "&gameId=" + this.gameHttpId + "&gameType=" + t, this.scoreResult)
+                    this.ajaxLoad("http://www.wesane.com/admin.php/Gamescore/saveGamescore", "gameScore=" + e + "&gameId=" + this.gameHttpId + "&gameType=" + t, this.scoreResult)
                 },
                 gamePV_load: function() {
-                    this.ajaxLoad(this.gamePvHttp, "gameId=" + this.gameHttpId, this.ajaxOnLogoResult)
+                    this.ajaxLoad("http://www.wesane.com/admin.php/Activityshow/gamelogo", "gameID=" + this.gameHttpId, this.ajaxOnLogoResult)
                 },
                 ajaxOnLogoResult: function() {},
                 ajaxLoad: function(e, t, n) {
@@ -2074,7 +2057,7 @@ window.__require = function e(t, n, o) {
                 },
                 getLinkGameReturn: function(e, t, n, o) {
                     if (console.log("err0", e), console.log("err1", t), console.log("err2", n), console.log("err3", o), 0 == e) {
-                        this.ranLinkData = t, this.adShowBefore = this.ranLinkData.gameSet.adShowBefore, this.adShowAfter = this.ranLinkData.gameSet.adShowAfter, this.endLayCol = this.ranLinkData.gameSet.endLayerColor, this.moreBtnBgCol = this.ranLinkData.gameSet.moreBtnBgCol, this.moreBtnTextCol = this.ranLinkData.gameSet.moreBtnTextCol, this.moreGameUrl = this.ranLinkData.gameSet.moreBtnUrl, this.recGameData = n, this.ranRecGameData(), this.InfoData = o, this.endShow0 = this.InfoData.endShow0, this.endShow1 = this.InfoData.endShow1, this.endShow2 = this.InfoData.endShow2, this.endShow3 = this.InfoData.endShow3, this.infoGameName = this.InfoData.gameName, this.showText = this.InfoData.showText, this.startText = this.InfoData.startText, this.moreGameText = this.InfoData.moreGame, this.playAgainText = this.InfoData.rePlay, this.gameInfoText = this.InfoData.showText, this.txtStartText = this.InfoData.startText, this.txtMoreText = this.InfoData.moreGame, this.txtAgainText = this.InfoData.rePlay, console.log("LoadMainGameScnee");
+                        this.ranLinkData = t, console.log("LoadMainGameScnee");
                         var c = a.launchScene,
                             r = a.Bros,
                             s = a.caS;
@@ -3363,11 +3346,11 @@ window.__require = function e(t, n, o) {
                         t.node.parent = cc.find("Canvas/fruitNode"), i.default.Instance.fruitHeigth = i.default.Instance.findHighestFruit(), null != t.node.getComponent(cc.RigidBody) && (t.node.getComponent(cc.RigidBody).angularVelocity = 0);
                         var c = this.fruitNumber,
                             r = n.node.getComponent("fruitData").fruitNumber;
-                        c == r && c < 9 && r < 9 ? (this.pengzhuangCount += 1, 0 == t.node.getComponent("fruitData").getNumber() && (a.default.score += this.fruitNumber + (1 * multiplescore), u.default.Instance.SetScoreTween(a.default.score), n.node.getComponent(cc.PhysicsCircleCollider).radius = 0, n.node.getComponent(cc.PhysicsCircleCollider).apply(), this.node.getComponent(cc.PhysicsCircleCollider).radius = 0, this.node.getComponent(cc.PhysicsCircleCollider).apply(), cc.tween(t.node).to(.1, {
+                        c == r && c < 9 && r < 9 ? (this.pengzhuangCount += 1, 0 == t.node.getComponent("fruitData").getNumber() && (a.default.score += this.fruitNumber + 1, u.default.Instance.SetScoreTween(a.default.score), n.node.getComponent(cc.PhysicsCircleCollider).radius = 0, n.node.getComponent(cc.PhysicsCircleCollider).apply(), this.node.getComponent(cc.PhysicsCircleCollider).radius = 0, this.node.getComponent(cc.PhysicsCircleCollider).apply(), cc.tween(t.node).to(.1, {
                             position: n.node.position
                         }).call(function() {
                             i.default.Instance.createFruitSui(o.fruitNumber, n.node.position), i.default.Instance.createFruitL(o.fruitNumber, n.node.position, n.node.width), i.default.Instance.createLevelUpFruit(o.fruitNumber + 1, n.node.position), n.node.active = !1, t.node.active = !1, n.node.destroy(), t.node.destroy()
-                        }).start())) : c == r && 9 == c && 9 == r && (this.pengzhuangCount += 1, 0 == t.node.getComponent("fruitData").getNumber() && (a.default.score += this.fruitNumber + (1 * multiplescore), u.default.Instance.SetScoreTween(a.default.score), n.node.getComponent(cc.PhysicsCircleCollider).radius = 0, n.node.getComponent(cc.PhysicsCircleCollider).apply(), this.node.getComponent(cc.PhysicsCircleCollider).radius = 0, this.node.getComponent(cc.PhysicsCircleCollider).apply(), a.default.playerTouch = !1, cc.tween(t.node).to(.1, {
+                        }).start())) : c == r && 9 == c && 9 == r && (this.pengzhuangCount += 1, 0 == t.node.getComponent("fruitData").getNumber() && (a.default.score += this.fruitNumber + 1, u.default.Instance.SetScoreTween(a.default.score), n.node.getComponent(cc.PhysicsCircleCollider).radius = 0, n.node.getComponent(cc.PhysicsCircleCollider).apply(), this.node.getComponent(cc.PhysicsCircleCollider).radius = 0, this.node.getComponent(cc.PhysicsCircleCollider).apply(), a.default.playerTouch = !1, cc.tween(t.node).to(.1, {
                             position: n.node.position
                         }).call(function() {
                             i.default.Instance.createFruitSui(o.fruitNumber, n.node.position), i.default.Instance.createFruitL(o.fruitNumber, n.node.position, n.node.width), i.default.Instance.createLevelUpFruit(o.fruitNumber + 1, n.node.position);
